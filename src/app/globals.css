@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Electro Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Electro Regular'), url('/fonts/Electro.woff') format('woff');
+}
+
+body {
+  background: rgb(5, 0, 0);
+  color: white;
+  /* font-family: electro, sans-serif; */
+  font-family: 'Electro Regular', sans-serif;
+}
