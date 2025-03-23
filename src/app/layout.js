@@ -1,6 +1,6 @@
 // import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
+// import Electro from "next/font/local";
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
 //   subsets: ["latin"],
@@ -11,8 +11,11 @@ import "./globals.css";
 //   subsets: ["latin"],
 // });
 
-// const electro regular = ({
-
+// const electroRegular = Electro({
+// src: "/fonts/Electro.woff",
+// fontFamily: "Electro",
+// fontWeight: 400,
+// fontStyle: "normal",
 // })
 
 export const metadata = {
