@@ -7,7 +7,7 @@ import Link from "next/link";
 export function Shapesection() {
   return (
     <div>
-      <div className="flex flex-col center bg-purple-400 max-w-full">
+      <div className="flex flex-col center bg-purple-900 max-w-full">
         <h1 className="pt-3 text-6xl font-stretch-expanded font-extrabold text-center text-fuchsia-950">
           UPCOMING EVENTS
         </h1>
@@ -104,36 +104,7 @@ export function Shapesection() {
 
         </div>
 
-        <div className="flex gap-30 mx-30 items-center">
-          <ul>
-            b▲llAZZ Events spot
-            <li>+919112211493</li>
-            <li>+919112211492</li>
-            <li>events@ballazz.com sales@ballazz.com</li>
-          </ul>
-
-          <ul>
-            Opening Time
-            <li>Opening Hours - 247</li>
-            <li>Party Hours - Your event 0'clock</li>
-            <li>Clubbing Hours - 10pm onwards</li>
-          </ul>
-
-          <ul>
-            Quick Links
-            <Link href='/about'><li>About</li></Link>
-            <Link href='/shop'><li>Shop</li></Link>
-            <Link href='/reservation'><li>Reservations</li></Link>
-            <Link href='/blogs'><li>Blogs</li></Link>
-            <Link href='/events'><li>Events</li></Link>
-            <Link href='/contact'><li>Contact</li></Link>
-          </ul>
-
-          <div className="text-center flex-col text-yellow-100 text-5xl">
-            <h1 className="font-bold">b▲llazz</h1>
-            <h4 className="font-bold text-[10px]">Your Deluxe Events Spot</h4>
-          </div>
-        </div>
+        
       </div>
     </div>
   );

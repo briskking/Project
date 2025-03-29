@@ -13,7 +13,7 @@ const [Open, setOpen] = useState(false);
 
   return (
     <div>
-    <header className="bg-purple-900/10 transparent backdrop-blur-3xl  flex justify-between items-center py-3 px-4 fixed top-0 w-full md:w-full">
+    <header className="bg-black/100 flex justify-between items-center py-3 px-4 fixed top-0 w-full md:w-full">
 
 <div className='px-5'>
   <Image src={Logo} alt="logo" width={80} height={80} />
@@ -34,7 +34,7 @@ const [Open, setOpen] = useState(false);
 
    
 
-    <nav className={`${Open ? "flex" : "hidden"} flex-col absolute right-0 top-20  text-fuchsia-100 w-full md:w-auto transition-all ease-in-out duration-300 bg-purple-950/80`}>
+    <nav className={`${Open ? "flex" : "hidden"} flex-col absolute right-0 top-20  text-fuchsia-100 w-full md:w-auto transition-all ease-in-out duration-300 bg-black/80`}>
 
       <ul className={`flex flex-col items-start text-center gap-4 py-2 px-4 text-lg space-x-30 pb-20
         }`}>
@@ -52,7 +52,7 @@ const [Open, setOpen] = useState(false);
         <li>About</li></Link>
         <Link href="/contact">
         <li>Contact</li></Link>
-        <Link href="/reservations">
+        <Link href="/reservation">
         <li>Reservations</li></Link>
         <Link href="/blogs">
         <li>Blogs</li></Link>

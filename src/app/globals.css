@@ -26,6 +26,10 @@ h2 {
   font-family: var(--font-electro);
 }
 
+p {
+  font-family: var(--font-ma);
+}
+
 /* @keyframes gradientAnimation {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -41,3 +45,10 @@ h2 {
 .clip-triangle {
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
+
+/* . {
+  width: 100px;
+  height: 100px;
+  background-color: #f0eef3 transparent;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+} */

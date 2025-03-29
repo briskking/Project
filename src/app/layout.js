@@ -1,12 +1,15 @@
 // import { Geist, Geist_Mono } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import {Header} from '../components/headerComp/header.js/'
 import {Footer} from '../components/footerComp/footer.js/' 
 // import Electro from "next/font/local";
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
+// 
+const ma = Montserrat ({
+  variable: "--font-ma",
+  weight: ["400", "700"],
+  subsets: ["latin"],
+});
 
 // const geistMono = Geist_Mono({
 //   variable: "--font-geist-mono",
@@ -29,9 +32,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`antialiased`}
+        className={`antialiased flex flex-col min-h-screen ${ma.className}`}
       >
-<div>
         <Header />
 
         
@@ -40,7 +42,7 @@ export default function RootLayout({ children }) {
         <Footer/>
 
 
-</div>
+
 
 
       </body>
