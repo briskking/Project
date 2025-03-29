@@ -22,6 +22,22 @@ h1 {
   font-family: var(--font-electro);
 }
 
+h2 {
+  font-family: var(--font-electro);
+}
+
+/* @keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradientAnimation 3s ease infinite;
+} */
+
+
 .clip-triangle {
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
