@@ -6,8 +6,8 @@ import Link from "next/link";
 export function Footer() {
   return (
     <>
-      <footer className="flex-col justify-between items-center h-[50px] gap-12 w-full">
-        <div className="flex gap-30 items-center bg-purple-900 h-60 w-full px-30">
+      <footer className="flex-col justify-between items-center h-[50px] gap-12 max-w-full">
+        <div className="flex gap-30 items-center bg-[#1f0a24] h-60 w-full px-30">
           <ul>
             b▲llAZZ Events spot
             <li>+919112211493</li>

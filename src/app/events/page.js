@@ -3,7 +3,7 @@ import React from 'react'
 function Events () {
 
   return (
-    <div>
+    <div className='max-w-[1220px] mx-auto py-35'>
 
 BOOK YOUR VIP TABLE
 best party in north goa

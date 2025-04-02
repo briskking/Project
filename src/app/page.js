@@ -8,7 +8,7 @@ import{Slider} from '../components/slideComp/slides.js';
 
  function Home() {
   return (
-    <div>
+    <div className=''>
 
 <div>
 
@@ -26,7 +26,6 @@ import{Slider} from '../components/slideComp/slides.js';
 </div>
 
 <section>
-  {/* <Slider /> */}
 <Shapesection /> 
 
 </section>
