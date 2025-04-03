@@ -31,17 +31,21 @@ p {
   font-family: var(--font-ma);
 }
 
-/* @keyframes gradientAnimation {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+
+@keyframes slide {
+  0%, 20% { transform: translateX(0); } 
+  24%, 45% { transform: translateX(-100%); } 
+  50%, 70% { transform: translateX(-200%); } 
+  75%, 95% { transform: translateX(-300%); } 
+ 100% { transform: translateX(-400%); } 
+
+
+
 }
 
-.animate-gradient {
-  background-size: 200% 200%;
-  animation: gradientAnimation 3s ease infinite;
-} */
-
+.animate-slide {
+  animation: slide 10s ease-in-out infinite;
+}
 
 .clip-triangle {
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
@@ -49,6 +53,12 @@ p {
 
 .clip-trianglee {
   clip-path: polygon(50% 100%, -20% 0%, 120% 0%);
+  display: inline-block;
+  text-align: center;
+}
+
+.clip-triangule {
+  clip-path: polygon(50% 100%, -40% 0%, 140% 0%);
   display: inline-block;
   text-align: center;
 }
@@ -66,6 +76,44 @@ p {
   /* padding: auto; */
   /* margin: 30rem; */
 }
+
+/* @keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(-400%);
+  }
+} */
+
+/* @keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+} */
+
+/* @keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradientAnimation 3s ease infinite;
+} */
 
 /* . {
   width: 100px;

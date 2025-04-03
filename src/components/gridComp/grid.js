@@ -12,6 +12,11 @@ const images = [
     '/gridimages/12.avif',
     '/gridimages/13.jpg',
     '/gridimages/14.avif',
+    '/gridimages/34.avif',
+    '/gridimages/35.avif',
+    '/gridimages/8.jpg',
+    '/gridimages/39.jpg',
+    
     
         ]
 
@@ -23,7 +28,7 @@ export function Grid() {
 
     <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0 p-32 min-h[500px]'>
 {images.map((jpeg, index) => (
-        <div key={index} className="relative z-0 w-full h-85 transition-transform duration-300 hover:scale-105 overflow-hidden">
+        <div key={index} className="relative z-0 w-[318px] h-[400px] transition-transform duration-300 hover:scale-105 overflow-hidden">
           <Image
             src={jpeg}
             alt={`Image ${index + 1}`}
@@ -33,6 +38,7 @@ export function Grid() {
           />
         </div>
       ))}
+
 
     </div>
   )
