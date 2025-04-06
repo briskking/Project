@@ -47,8 +47,33 @@ p {
   animation: slide 10s ease-in-out infinite;
 }
 
-.clip-triangle {
+.clip-triangle{
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+
+}
+
+.clip-triangularr{
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background-color: rgb(186, 3, 186);
+  width: 30px;
+  height: auto; 
+
+}
+
+.clip-triangular {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  width: 350px ;
+  height: 280px;
+  display: block;
+  background-color: rgb(48, 31, 48);
+}
+
+
+.clip-triangool {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  width: 330px;
+  height: 220px;
+  display: block;
 }
 
 .clip-trianglee {
