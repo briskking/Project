@@ -41,7 +41,7 @@ export function Header() {
             {Open ? (
               <X size={35} />
             ) : (
-              <Menu size={50} className="hover:bg-fuchsia-950" />
+              <Menu size={50} className="hover:text-fuchsia-400" />
             )}
           </button>
         </div>
