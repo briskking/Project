@@ -8,7 +8,10 @@ export function About() {
   return (
     <>
       <div className="flex flex-col items-center justify-center py-35 mx-auto h-full bg-[#1f0a24] w-full">
-        <Horiz caption="About us at b▲llAZZ Events Spot" />
+        <Horiz caption="About us at b▲llAZZ Events Spot" 
+        first
+        />
+        
 
         <section className="flex flex-col gap-90 h-auto min-h-screen mb-7">
           <div className="pt-7">
@@ -28,7 +31,9 @@ export function About() {
         </section>
 
         <section className="pt-50">
-          <Horiz caption="What We Offer" />
+          <Horiz caption="What We Offer" 
+          first
+          />
 
           <div className="flex gap-7 pt-14">
             <Overlay
@@ -55,7 +60,9 @@ export function About() {
 
         <section className="pt-20 space-y-8">
           <div className="z-0 ">
-            <Horiz caption="OUR DEE-JAYS(Disc JOckeyers)" />
+            <Horiz caption="OUR DEE-JAYS(Disc JOckeyers)" 
+            first
+            />
           </div>
 
           <div className="flex z-0 md:flex-row gap-12 flex-col justify-center items-center pt-14">

@@ -17,14 +17,13 @@ export function Header() {
           <Image src={Logo} alt="logo" width={80} height={80} />
         </div>
 
-        <div className="flex items-center mx-auto">
-          <span className="flex gap-15 mx-auto">
-            <div className="triangularr w-11">
+        <div className="flex gap-7 items-center mx-auto">
+
             <FaInstagram className="hover:text-fuchsia-400" size={15} />
-            </div>
+            
 
             <FaTiktok className="hover:text-fuchsia-400" size={15}/>
-          </span>
+
         </div>
 
         <div className="text-center flex-col text-yellow-100 text-5xl mx-auto items-center justify-center">
