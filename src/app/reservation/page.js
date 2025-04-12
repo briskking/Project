@@ -1,26 +1,66 @@
-import React from 'react'
+import React from "react";
+import Horiz from "../../components/headingComp/hr.js";
+import { Overlay } from "../../components/overlay.js";
+import { Form } from "../../components/formComp/form.js";
 
-function Reservation() {
+export function Reservation() {
   return (
-    <div>BOOK YOUR VIP TABLE
-    best party in north goa
-    
-    Join us on the dance floor tonight. Book your hottest nightlife experience in Goa with just a WhatsApp message! 
-    
-    Don’t miss out on the fun – see you on the dance floor!
-    For confirm booking
-    Whatsapp Us On
-    
-        +91 9112211491
-        +91 9112211492
-        +91 9112211493
-        +91 9112211494
-        +91 9112211495
-    
-    Download Our App To Book Your Table
-    
-    </div>
-  )
+    <>
+      <div className="mx-auto py-29 flex-col items-center justify-center space-x-4 bg-[#1f0a24] text-center">
+        <Horiz
+          textI="BOOK YOUR VIP TABLE AND EVENT SPOT"
+          textII="best parties in +234"
+          textIII="Get on the dance floor tonight. Book your hottest nocturnal experience in +234 with just a WhatsApp message!"
+          textIV="Don’t Snooze!! – see you on the dance floor!"
+        />
+<div className="flex flex-col items-center justify-center pt-14">
+
+<p className="text-[17px] text-center w-[700px] text-amber-50 font-medium">
+            Book your table at b▲llAZZ Events Spot and enjoy a deluxe and excitiing night. Our VIP tables offer the perfect blend of comfort and exclusivity, ensuring you have an unforgettable experience. 
+          </p>
+
+</div>
+
+        <div className="flex items-center justify-center gap-12 pt-14">
+
+          <Overlay mirrorI="/gridimages/80.jpg" wording="Zone I" 
+          second />
+
+          <Overlay mirrorI="/gridimages/81.avif" wording="Zone II" second/>
+
+          <Overlay mirrorI="/gridimages/82.avif" wording="Zone III" second/>
+        </div>
+
+        <div className="pt-7">
+        <Form />
+
+        </div>
+
+        <div className="flex items-center justify-center pt-5 gap-9">
+          <div>
+            <p className="font-bold text-3xl pb-4 w-[400px] text-left">
+              For confirm booking Whatsapp Us On
+            </p>
+
+            <ul className="items-start justify-start text-left">
+              <li>+91 9112211491</li>
+              <li>+91 9112211492</li>
+              <li>+91 9112211493</li>
+              <li>+91 9112211494</li>
+            </ul>
+          </div>
+
+          <div className="flex-col items-start justify-items-start pt-7">
+            <p className="w-[200px] text-left text-lg">Download Our App To Book Your Table</p>
+
+            <Overlay mirrorII="/gridimages/95.png" words="b▲llAZZ" 
+            wordsII=" Your Deluxe Events Spot"
+            />
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
 
-export default Reservation
+export default Reservation;

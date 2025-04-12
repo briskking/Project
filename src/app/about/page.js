@@ -8,7 +8,8 @@ export function About() {
   return (
     <>
       <div className="flex flex-col items-center justify-center py-35 mx-auto h-full bg-[#1f0a24] w-full">
-        <Horiz caption="About us at b▲llAZZ Events Spot" 
+        
+        <Horiz caption="About us at b▲llAZZ Events Spot"
         first
         />
         
@@ -39,21 +40,25 @@ export function About() {
             <Overlay
               text="Comfortable Space for your Owambe Parties"
               mirror="/gridimages/31.jpg"
+              first
             />
 
             <Overlay
               text="A World Class Dancefloor"
               mirror="/gridimages/51.jpg"
+              first
             />
 
             <Overlay
               text="Gbedu & Your Favorite Local/International Dishes"
               mirror="/gridimages/photo-grid.png"
+              first
             />
 
             <Overlay
               text="Music with Smooth Drinks"
               mirror="/gridimages/3.avif"
+              first
             />
           </div>
         </section>

@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Horiz = ({caption, first }) => {
+export const Horiz = ({caption, first, textI, textII, textIII, textIV }) => {
   return (
     <div>
       {first ? (
@@ -14,18 +14,20 @@ export const Horiz = ({caption, first }) => {
       ) : (
         <div className="flex flex-col mx-31 py-5 items-center justify-center space-x-4 bg-[#1f0a24] text-center">
           <h1 className="items-center text-5xl text-gray-100 font-extrabold font-stretch-extra-expanded">
-            Dished Events at b▲llAZZ Events Spot
+            {textI}
           </h1>
 
           <h4 className="font-bold text-white text-[14px] py-1 pb-4 uppercase">
-            Your favorite party plug in +234
+            {textII}
           </h4>
 
           <hr className="h-1 bg-yellow-800 w-30 text-yellow-800 items-center justify-center" />
 
-          <h2 className="text-3xl font-stretch-ultra-expanded text-purple-50 font-medium py-5">
-            UPCOMING/REGULAR Event Nights
+          <h2 className="text-3xl font-stretch-ultra-expanded text-purple-50 font-medium pt-5 pb-3">
+            {textIII}
           </h2>
+
+          <h3 className="py-2">{textIV}</h3>
         </div>
       )}
     </div>

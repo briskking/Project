@@ -7,7 +7,11 @@ import { ArrowDown } from "lucide-react";
 function Events() {
   return (
     <div className="mx-auto py-35 flex-col items-center justify-center space-x-4 bg-[#1f0a24]">
-      <Horiz />
+      <Horiz 
+      textI ="Dished Events at b▲llAZZ Events Spot"
+      textII="Your favorite party plug in +234"
+      textIII="UPCOMING/REGULAR Event Nights"
+      />
 
       <section className="">
         <div className="flex gap-1 pt-14">
