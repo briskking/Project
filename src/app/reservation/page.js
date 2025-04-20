@@ -1,7 +1,8 @@
 import React from "react";
 import Horiz from "../../components/headingComp/hr.js";
 import { Overlay } from "../../components/overlay.js";
-import { Form } from "../../components/formComp/form.js";
+// import { Form } from "../../components/formComp/form.js";
+import { FormII } from '../../components/formComp/formII.js'
 
 export function Reservation() {
   return (
@@ -32,7 +33,8 @@ export function Reservation() {
         </div>
 
         <div className="pt-7">
-        <Form />
+        
+        <FormII />
 
         </div>
 

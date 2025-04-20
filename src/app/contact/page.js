@@ -1,21 +1,14 @@
-import React from 'react'
+import React from "react";
+import { Form } from "../../components/formComp/form.js";
 
 function Contact() {
   return (
-    <div>
-    Contact US
-    Shoot us a message and
-    Let’s go clubbing!
-    Email Address
-    
-    events@hammerzzclub.com
-    Call Us
-    
-    +91 9112211492
-    Address
-    
-    Calangute - Baga Rd, Baga, Goa</div>
-  )
+    <div className="flex flex-col items-center justify-center pt-29 bg-[#1f0a24] text-center space-x-4">
+      
+      <Form />
+      
+    </div>
+  );
 }
 
-export default Contact
+export default Contact;

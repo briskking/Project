@@ -3,6 +3,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import {Header} from '../components/headerComp/header.js/'
 import {Footer} from '../components/footerComp/footer.js/' 
+import {Scroll} from '../components/scrollComp/scroll.js/'
 // import Electro from "next/font/local";
 // 
 const ma = Montserrat ({
@@ -38,6 +39,8 @@ export default function RootLayout({ children }) {
 
         
         <main className="flex-grow">{children}</main>
+
+        <Scroll/>
 
         <Footer/>
 

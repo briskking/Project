@@ -69,7 +69,7 @@ export function Slider() {
         {/* relative w-full max-w-lg mx-auto p-4 */}
 
         <div className="">
-        <hr className="w-[72%] absolute top-1/2 transform translate-y-1/2 z-0 mx-5.5"></hr>
+          <hr className="w-[72%] absolute top-1/2 transform translate-y-1/2 z-0 mx-5.5"></hr>
         </div>
 
         <div className="flex items-center justify-center p-1">
@@ -91,7 +91,9 @@ export function Slider() {
               <h2 className="text-[29px] font-bold text-amber-600">
                 {slides[presentIndex].title}
               </h2>
-              <p className="text-[15px] pb-4">{slides[presentIndex].description}</p>
+              <p className="text-[15px] pb-4">
+                {slides[presentIndex].description}
+              </p>
 
               <Link href="/reservation">
                 <Button label="Book" />
