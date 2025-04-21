@@ -57,6 +57,13 @@ p {
 
 }
 
+.clip-trianguu{
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  /* width: 400px;
+  height: 80px; */
+
+}
+
 .clip-triangularr{
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   background-color: rgb(186, 3, 186);

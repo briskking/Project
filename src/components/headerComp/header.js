@@ -12,30 +12,35 @@ export function Header() {
 
   return (
     <div>
-      <header className="bg-black/100 flex justify-between items-center py-3 px-7 fixed top-0 w-full z-20 md:w-full mx-auto">
-        <div className="">
+      <header className="bg-black/100 flex justify-between items-center py-3 fixed top-0 w-full z-20 md:w-full">
+        {/* <div className="">
           <Image src={Logo} alt="logo" width={80} height={80} />
+        </div> */}
+
+        <div className="flex gap-7 items-center pl-24">
+
+            <div className="clip-trianguu w-13 h-9 bg-black hover:bg-[#8e5ea0] z-0 flex items-center justify-center rounded-lg pt-2">
+            <FaInstagram className="hover:text-white" size={17} />
+              </div>
+
+           <div className=" clip-trianguu w-13 h-9 bg-black hover:bg-[#8e5ea0] z-0 flex items-center justify-center rounded-lg pt-2"><FaXTwitter className="hover:text-white" size={17} /> </div>
+
+            <div className="clip-trianguu w-13 h-9 bg-black hover:bg-[#8e5ea0] z-0 flex items-center justify-center rounded-lg pt-2"><FaTiktok className="hover:text-white" size={16}/></div>
+
         </div>
 
-        <div className="flex gap-7 items-center mx-auto">
-
-            <FaInstagram className="hover:text-fuchsia-400" size={15} />
-            
-
-            <FaTiktok className="hover:text-fuchsia-400" size={15}/>
-
-        </div>
-
-        <div className="text-center flex-col text-yellow-100 text-5xl mx-auto items-center justify-center">
+        
+        <div className="text-center flex-col text-yellow-100 text-5xl  items-center justify-center mr-45">
           <h1 className="font-bold">b▲llazz</h1>
           <h4 className="font-bold text-[10px]">Your Deluxe Events Spot</h4>
         </div>
+      
 
-        <div className="flex items-center mx-auto">
-          <FaXTwitter className="hover:text-fuchsia-400" size={15} />
-        </div>
+        {/* <div className="flex items-center mx-auto">
+          
+        </div> */}
 
-        <div className="px-5">
+        <div className="pr-15">
           <button onClick={() => setOpen(!Open)}>
             {Open ? (
               <X size={35} />

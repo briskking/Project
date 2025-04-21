@@ -1,20 +1,19 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './app/**/*.{js,ts,jsx,tsx}',      // if using /app directory
-    './pages/**/*.{js,ts,jsx,tsx}',    // for /pages support
+    './app/**/*.{js,ts,jsx,tsx}',
+    './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
       keyframes: {
-        logoScroll: {
+        scrollX: {
           '0%': { transform: 'translateX(100%)' },
           '100%': { transform: 'translateX(-100%)' },
         },
       },
       animation: {
-        logoScroll: 'logoScroll 10s linear infinite',
+        scrollX: 'scrollX 15s linear infinite',
       },
     },
   },
