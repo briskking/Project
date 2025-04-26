@@ -1,73 +1,153 @@
-import React from 'react'
+"use client";
 
+import React, { useState } from "react";
+import { Toaster, toast } from "react-hot-toast";
 
 export function FormII() {
+  const [formDetails, setFormDetails] = useState({
+    email: "",
+    password: "",
+    zone: "",
+    guestsRange: "",
+  });
+
+  const [finished, setFinished] = useState(false);
+  const [error, setError] = useState({});
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormDetails((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const validated = () => {
+    const newErrors = {};
+
+    if (formDetails.email === "") newErrors.email = "Please enter email";
+    if (formDetails.password === "") newErrors.password = "Please enter password";
+    if (formDetails.zone === "") newErrors.zone = "Please choose zone";
+    if (formDetails.guestsRange === "") newErrors.guestsRange = "Please choose guests range";
+
+    setError(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (!validated()) {
+      toast.error("Please enter all required information!");
+      return;
+    }
+
+    toast.loading("Sending...");
+
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/ikhanobasunnyking@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formDetails),
+      });
+
+      if (!response.ok) throw new Error("Error encountered");
+
+      toast.dismiss();
+      toast.success("Information received!");
+      setFormDetails({ email: "", password: "", zone: "", guestsRange: "" });
+      setFinished(true);
+      setError({});
+    } catch (err) {
+      toast.dismiss();
+      toast.error("Submission error!");
+    }
+  };
+
   return (
     <div className="flex items-center justify-center gap-50">
-          <div className="flex flex-col items-start justify-start gap-7 px-4">
-            <h2 className="text-7xl w-[200px]font-stretch-ultra-expanded">
-              Secure a Spot
-            </h2>
-            <p className="w-[500px] text-left text-yellow-700">
-              Choose from several table service arrangements including the
-              entrance fee, liquor, separate cloakroom, separate lavatory and
-              speed entrance{" "}
-            </p>
+      <div className="flex flex-col items-start justify-start gap-7 px-4">
+        <h2 className="text-7xl w-[300px] font-stretch-ultra-expanded">
+          Secure a Spot
+        </h2>
+        <p className="w-[500px] text-left text-yellow-600">
+          Choose from several table service arrangements including the entrance
+          fee, liquor, separate cloakroom, separate lavatory and speed entrance.
+        </p>
+      </div>
+
+      <div className="flex flex-row items-center justify-center w-[400px] h-[100vh] bg-[#1a0f20]">
+        <form
+          onSubmit={handleSubmit}
+          className="flex flex-col items-start justify-start gap-7 px-4 mx-auto"
+        >
+      
+          <div className="flex flex-col w-[300px]">
+            <input
+              className="w-full h-[50px] px-4 bg-[#402c45] rounded-lg text-white"
+              type="text"
+              name="email"
+              placeholder="Email"
+              value={formDetails.email}
+              onChange={handleChange}
+            />
+            {error.email && <span className="text-red-500 text-sm">{error.email}</span>}
           </div>
 
-          <div className="flex flex-row items-center justify-center w-[400px] h-[100vh] bg-[#1a0f20]">
-            <form
-              action=""
-              className="flex flex-col items-start justify-start gap-7 px-4 mx-auto"
+          <div className="flex flex-col w-[300px]">
+            <input
+              className="w-full h-[50px] px-4 bg-[#402c45] rounded-lg text-white"
+              type="password"
+              name="password"
+              placeholder="Password"
+              value={formDetails.password}
+              onChange={handleChange}
+            />
+            {error.password && <span className="text-red-500 text-sm">{error.password}</span>}
+          </div>
+
+          <label className="text-[12px] text-[#d1c4e9]">Confirm Zone</label>
+          <div className="flex flex-col w-[300px]">
+            <select
+              className="w-full h-[50px] px-4 text-[#d1c4e9] bg-[#402c45] rounded-lg"
+              name="zone"
+              value={formDetails.zone}
+              onChange={handleChange}
             >
-              <div className="flex items-center justify-center w-[300px] h-[50px] bg-[#402c45] rounded-lg">
-                <input
-                  className="w-full h-full px-4 border-none outline-none"
-                  type="text"
-                  name=""
-                  id=""
-                  placeholder="Email or Phone Number"
-                />
-              </div>
-
-              <div className="flex items-center justify-center w-[300px] h-[50px] bg-[#402c45] rounded-lg">
-                <input
-                  className="w-full h-full border-none outline-none px-4"
-                  type="password"
-                  name=""
-                  id=""
-                  placeholder="Password"
-                />
-              </div>
-
-              <label className="text-[12px] text-[#d1c4e9]">Confirm Zone</label>
-              <div className="flex items-center justify-center w-[300px] h-[50px] bg-[#402c45] rounded-lg">
-                {/* <input className="w-full h-full border-none px-4" type="name" name="" id="" placeholder='Zone'/> */}
-                <select className="w-[300px] h-full border-none px-4 text-[#d1c4e9] bg-[#402c45] rounded-lg">
-                  <option value="select">Choose Zone</option>
-                  <option value="select"> Zone I</option>
-                  <option value="select">Zone II</option>
-                  <option value="select">Zone III</option>
-                </select>
-              </div>
-
-              <div className="flex items-center justify-center w-[300px] h-[50px] bg-[#402c45] rounded-lg">
-                {/* <input className="w-full h-full border-none px-4" type="password" name="" id="" placeholder='Password'/> */}
-                <select className="w-[300px] h-full border-none px-4 text-[#d1c4e9] bg-[#402c45] rounded-lg">
-                  <option value="select"> Guests Range</option>
-                  <option value="select"> 1-2</option>
-                  <option value="select">3-8</option>
-                  <option value="select">Other</option>
-                </select>
-              </div>
-
-              <button className="flex items-center justify-center w-[300px] h-[50px] bg-[#402c45] rounded-lg">
-                Reserve Now
-              </button>
-            </form>
+              <option value="">Choose Zone</option>
+              <option value="zone I">Zone I</option>
+              <option value="zone II">Zone II</option>
+              <option value="zone III">Zone III</option>
+            </select>
+            {error.zone && <span className="text-red-500 text-sm">{error.zone}</span>}
           </div>
-        </div>
-  )
+
+          <div className="flex flex-col w-[300px]">
+            <select
+              className="w-full h-[50px] px-4 text-[#d1c4e9] bg-[#402c45] rounded-lg"
+              name="guestsRange"
+              value={formDetails.guestsRange}
+              onChange={handleChange}
+            >
+              <option value="">Guests Range</option>
+              <option value="1-2">1-2</option>
+              <option value="3-8">3-8</option>
+              <option value="other">Other</option>
+            </select>
+            {error.guestsRange && <span className="text-red-500 text-sm">{error.guestsRange}</span>}
+          </div>
+
+          <button
+            type="submit"
+            className="w-[300px] h-[50px] bg-[#682677] text-white rounded-lg"
+          >
+            Reserve Now
+          </button>
+        </form>
+      </div>
+      <Toaster />
+    </div>
+  );
 }
 
-export default FormII
+export default FormII;

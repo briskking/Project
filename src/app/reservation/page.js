@@ -39,21 +39,25 @@ export function Reservation() {
         </div>
 
         <div className="flex items-center justify-center pt-5 gap-9">
-          <div>
-            <p className="font-bold text-3xl pb-4 w-[400px] text-left">
-              For confirm booking Whatsapp Us On
+          <div className="flex-col items-start justify-start">
+            <div className="flex items-center gap-2">
+            <hr className="border-2 border-yellow-700 w-15"/>
+            <p className="font-bold text-4xl pb-4 w-[400px] text-left">
+              <span className="text-xl font-medium">For confirm booking</span> Whatsapp Us On
             </p>
+            </div>
+            
 
-            <ul className="items-start justify-start text-left">
-              <li>+91 9112211491</li>
-              <li>+91 9112211492</li>
-              <li>+91 9112211493</li>
-              <li>+91 9112211494</li>
+            <ul className="pl-20 text-left">
+              <li>+234 9012211491</li>
+              <li>+234 9112211492</li>
+              <li>+234 9112211493</li>
+              <li>+234 9012211494</li>
             </ul>
           </div>
 
           <div className="flex-col items-start justify-items-start pt-7">
-            <p className="w-[200px] text-left text-lg">Download Our App To Book Your Table</p>
+            <p className="w-[200px] text-left text-lg pb-3">Download Our App To Book Your Table</p>
 
             <Overlay mirrorII="/gridimages/95.png" words="b▲llAZZ" 
             wordsII=" Your Deluxe Events Spot"

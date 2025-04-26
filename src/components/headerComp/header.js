@@ -20,12 +20,14 @@ export function Header() {
         <div className="flex gap-7 items-center pl-24">
 
             <div className="clip-trianguu w-13 h-9 bg-black hover:bg-[#8e5ea0] z-0 flex items-center justify-center rounded-lg pt-2">
-            <FaInstagram className="hover:text-white" size={17} />
+            <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer"><FaInstagram className="hover:text-white" size={17} /></a>
               </div>
 
-           <div className=" clip-trianguu w-13 h-9 bg-black hover:bg-[#8e5ea0] z-0 flex items-center justify-center rounded-lg pt-2"><FaXTwitter className="hover:text-white" size={17} /> </div>
+           <div className=" clip-trianguu w-13 h-9 bg-black hover:bg-[#8e5ea0] z-0 flex items-center justify-center rounded-lg pt-2">
+           <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer"><FaXTwitter className="hover:text-white" size={17} /></a> </div>
 
-            <div className="clip-trianguu w-13 h-9 bg-black hover:bg-[#8e5ea0] z-0 flex items-center justify-center rounded-lg pt-2"><FaTiktok className="hover:text-white" size={16}/></div>
+            <div className="clip-trianguu w-13 h-9 bg-black hover:bg-[#8e5ea0] z-0 flex items-center justify-center rounded-lg pt-2">
+            <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer"><FaTiktok className="hover:text-white" size={16}/></a></div>
 
         </div>
 

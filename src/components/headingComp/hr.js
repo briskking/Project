@@ -21,7 +21,7 @@ export const Horiz = ({caption, first, textI, textII, textIII, textIV }) => {
             {textII}
           </h4>
 
-          <hr className="h-1 bg-yellow-800 w-30 text-yellow-800 items-center justify-center" />
+          <hr className="h-1 bg-yellow-800 w-25 text-yellow-800 items-center justify-center" />
 
           <h2 className="text-3xl font-stretch-ultra-expanded text-purple-50 font-medium pt-5 pb-3">
             {textIII}

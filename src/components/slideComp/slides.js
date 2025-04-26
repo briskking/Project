@@ -68,16 +68,14 @@ export function Slider() {
       <div className="relative mx-[420px] pb-12">
         {/* relative w-full max-w-lg mx-auto p-4 */}
 
-        <div className="">
-          <hr className="w-[72%] absolute top-1/2 transform translate-y-1/2 z-0 mx-5.5"></hr>
-        </div>
+       
 
         <div className="flex items-center justify-center p-1">
           {/* Previous Button */}
 
           {/* Slide Content */}
           <div className="flex flex-row-reverse gap-70 items-center justify-center">
-            <div className="rounded-lg shadow-lg">
+            <div className="rounded-lg shadow-lg w-[270px]">
               <Image
                 src={slides[presentIndex].image}
                 alt={slides[presentIndex].title}
@@ -88,10 +86,10 @@ export function Slider() {
             </div>
 
             <div className="flex flex-col gap-3 text-white p-4 w-100 z-0">
-              <h2 className="text-[29px] font-bold text-amber-600">
+              <h2 className="text-[50px] w-[500px] font-bold text-amber-600">
                 {slides[presentIndex].title}
               </h2>
-              <p className="text-[15px] pb-4">
+              <p className="text-[18px] pb-4">
                 {slides[presentIndex].description}
               </p>
 
@@ -99,7 +97,11 @@ export function Slider() {
                 <Button label="Book" />
               </Link>
 
-              <div className="flex gap-10 pt-20">
+              <div className="flex items-start justify-items-start pt-9">
+          <hr className="w-[95.5%] absolute top-1/2 transform translate-y-1/3 z-0"></hr>
+        </div>
+
+              <div className="flex gap-10 pt-15">
                 <button
                   onClick={prevSlide}
                   className="p-2 bg-yellow-50 hover:bg-yellow-600 clip-triangle w-11.2 h-8 z-0"
@@ -121,7 +123,7 @@ export function Slider() {
         </div>
 
         {/* Indicators */}
-        <div className="flex justify-center gap-2 mt-8">
+        <div className="flex justify-center gap-2 mt-15">
           {slides.map((_, index) => (
             <span
               key={index}

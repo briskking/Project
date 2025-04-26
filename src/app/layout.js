@@ -4,6 +4,8 @@ import "./globals.css";
 import {Header} from '../components/headerComp/header.js/'
 import {Footer} from '../components/footerComp/footer.js/' 
 import {Scroll} from '../components/scrollComp/scroll.js/'
+import { Map} from '../components/map.js/'
+// import { Inter } from "next/font/google";
 // import Electro from "next/font/local";
 // 
 const ma = Montserrat ({
@@ -40,7 +42,9 @@ export default function RootLayout({ children }) {
         
         <main className="flex-grow">{children}</main>
 
-        <Scroll/>
+        <div className="pb-10"><Scroll/></div>
+
+        <Map />
 
         <Footer/>
 
