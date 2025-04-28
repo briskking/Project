@@ -19,7 +19,7 @@ import{Slider} from '../components/slideComp/slides.js';
 
 <div className="flex justify-center bg-[url('/herovide.gif')] bg-cover bg-center items-center min-h-screen min-w-screen">
 
-<Link href='/reservations'><Button label="MAKE RESERVATION" first /></Link>
+<Link href='/reservation'><Button label="MAKE RESERVATION" first /></Link>
 
 
 </div>

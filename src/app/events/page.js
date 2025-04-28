@@ -1,11 +1,12 @@
 import React from "react";
 import { Banner } from "../../components/bannerComp/bannerComp.js/";
 import { Horiz } from "../../components/headingComp/hr.js/";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, Link } from "lucide-react";
 
 
 function Events() {
   return (
+    <>
     <div className="mx-auto py-35 flex-col items-center justify-center space-x-4 bg-[#1f0a24]">
       <Horiz 
       textI ="Dished Events at b▲llAZZ Events Spot"
@@ -59,9 +60,15 @@ function Events() {
             click="Book"
           />
         </div>
-        <p className="text-center pt-14">Get in touch with <span>b▲llAZZ Your Deluxe Events Spot</span></p>
-      </section>
+        </section>
+
+        <div className="pt-4">
+        <p className="text-center pt-14 text-3xl">Get in touch with <a href="https://localhost:3000" target="_blank" rel="noopener noreferrer"><span className="text-yellow-600 text-sm">b▲llAZZ Your Deluxe Events Spot</span></a></p>
+        </div>
+
     </div>
+
+    </>
   );
 }
 

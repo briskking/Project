@@ -76,13 +76,13 @@ export function Slider() {
           {/* Slide Content */}
           <div className="flex flex-row-reverse gap-70 items-center justify-center">
             <div className="rounded-lg shadow-lg w-[270px]">
-              <Image
+              <Link href='/events'><Image
                 src={slides[presentIndex].image}
                 alt={slides[presentIndex].title}
                 width={300}
                 height={200}
                 className="h-auto object-cover z-0 "
-              />
+              /></Link>
             </div>
 
             <div className="flex flex-col gap-3 text-white p-4 w-100 z-0">
