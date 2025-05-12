@@ -22,7 +22,7 @@ export function Shapesection() {
             <Slider />
           </div>
 
-          <div className="text-center px-31 py-6 leading-4 flex flex-col items-center justify-center text-[17.2px]">
+          <div className="text-center px-31 py-6 leading-4 flex flex-col items-center justify-center sm:text-[17.2px] text-[22px]">
             <div className="sm:w-[650px] w-[200px]">
               <h1 className="pt-10 text-5xl font-stretch-expanded font-extrabold text-center text-fuchsia-50">
                 b▲llAZZ EVENTS SPOT
@@ -33,8 +33,8 @@ export function Shapesection() {
             </h3>
             <hr className="h-1 border-none bg-yellow-700 w-15" />
             
-            <div className="sm:w-[100%] w-[350px] justify-evenly">
-            <p className="pb-6 pt-6 leading-7">
+            <div className="sm:w-[100%] w-[400px] justify-evenly">
+            <p className="pb-6 pt-6 leading-9">
               Witness a change in the nightlife and entertainment scene that has
               revamped ballAZZ’s events & clubbing landscape. ballAZZ Events
               Spot stands as the climax of deluxe revelry, where unparalleled
@@ -45,8 +45,8 @@ export function Shapesection() {
             </p>
             </div>
 
-            <div className="sm:w-[100%] w-[350px] justify-evenly">
-            <p className="pb-6 leading-7">
+            <div className="sm:w-[100%] w-[400px] justify-evenly">
+            <p className="pb-6 leading-9">
               ballAZZ Events Spot has earned its reputation as the most famous
               Events Spot in +234. We have redefined the party experience,
               setting new standards of opulence and excitement. Stepping through
@@ -55,8 +55,8 @@ export function Shapesection() {
             </p>
             </div>
 
-            <div className="sm:w-[100%] w-[350px] justify-evenly">
-            <p className="pb-6 leading-7">
+            <div className="sm:w-[100%] w-[400px] justify-evenly">
+            <p className="pb-6 leading-9">
               At ballAZZ Events Spot, you can count on us to help you live out
               moments that last forever. Our modern state-of-the-art sound
               systems and highly talented DJs ensure that every beat gives you
@@ -64,14 +64,14 @@ export function Shapesection() {
               elevates the entire experience, casting a magical glow that sets
               the mood for unforgettable nights. Whether you’re dancing the
               night away with friends or sipping on handcrafted cocktails at our
-              exquisite bar, every moment at b▲llAZZ is a testament to our
+              exquisite bar, every moment at ballAZZ is a testament to our
               commitment to excellence.
             </p>
             </div>
 
-            <div className="sm:w-[100%] w-[350px] justify-evenly">
-            <p className="pb-6 leading-7 text-amber-100">
-              It isnt too late to become a part of the legend that is b▲llAZZ
+            <div className="sm:w-[100%] w-[400px] justify-evenly">
+            <p className="pb-6 leading-9 text-amber-100">
+              It isnt too late to become a part of the legend that is ballAZZ
               Events Spot. Don’t miss out on what is notably the best events
               spot in +234. Join us for extraordinary days of music, dance, and
               memories that will linger long forever. Welcome to Change; welcome
@@ -79,8 +79,8 @@ export function Shapesection() {
             </p>
             </div>
 
-            <div className="sm:w-[100%] w-[350px] justify-evenly">
-            To learn more, contact b▲llAZZ the Deluxe Events Spot
+            <div className="sm:w-[100%] w-[400px] justify-evenly">
+            <p className="leading-6">To learn more, contact ballAZZ the Deluxe Events Spot</p>
             </div>
           </div>
 

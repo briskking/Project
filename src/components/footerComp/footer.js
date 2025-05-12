@@ -11,21 +11,21 @@ export function Footer() {
 
         {/* w-full sm:px-30 px-30 p-0 sm:p-0 */}
 
-          <ul>
+          <ul className="text-lg sm:text-lg">
             <li className="pb-3 font-bold">b▲llAZZ Events spot</li>
             <li>+919112211493</li>
             <li>+919112211492</li>
             <li>events@ballazz.com sales@ballazz.com</li>
           </ul>
 
-          <ul>
+          <ul className="pt-5 text-lg sm:text-lg">
             <li className="pb-3 font-bold">Opening Time</li>
             <li>Opening Hours - 247</li>
             <li>Party Hours - Your event 0'clock</li>
             <li>Clubbing Hours - 10pm onwards</li>
           </ul>
 
-          <ul className="">
+          <ul className="pt-5 text-lg sm:text-lg">
             <li className="pb-3 font-bold">Quick Links</li>
             <Link href="/about">
               <li>About</li>
