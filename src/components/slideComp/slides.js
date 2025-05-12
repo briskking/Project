@@ -1,12 +1,13 @@
 "use client";
-import { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import React from "react";
 import Image from "next/image";
 import Button from "../buttons/buttons";
 import Link from "next/link";
-// import { CldImage } from "next-cloudinary";
 
+import { useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+
+// Slide data
 const slides = [
   {
     id: 1,
@@ -64,78 +65,74 @@ export function Slider() {
   };
 
   return (
-    <>
-      <div className="relative mx-[420px] pb-12">
-        {/* relative w-full max-w-lg mx-auto p-4 */}
-
-       
-
-        <div className="flex items-center justify-center p-1">
-          {/* Previous Button */}
-
-          {/* Slide Content */}
-          <div className="flex flex-row-reverse gap-70 items-center justify-center">
-            <div className="rounded-lg shadow-lg w-[270px]">
-              <Link href='/events'><Image
+    <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8 pb-12">
+      <div className="flex items-center justify-center p-1">
+        <div className="flex flex-col lg:flex-row-reverse gap-4 md:gap-8 lg:gap-16 items-center justify-center">
+          {/* Image */}
+          <div className="rounded-lg shadow-lg sm:w-[270px] xl:w-[300px] overflow-hidden">
+            <Link href="/events" className="cursor-pointer block">
+              <img
+                width={300}
                 src={slides[presentIndex].image}
                 alt={slides[presentIndex].title}
-                width={300}
-                height={200}
-                className="h-auto object-cover z-0 "
-              /></Link>
-            </div>
-
-            <div className="flex flex-col gap-3 text-white p-4 w-100 z-0">
-              <h2 className="text-[50px] w-[500px] font-bold text-amber-600">
-                {slides[presentIndex].title}
-              </h2>
-              <p className="text-[18px] pb-4">
-                {slides[presentIndex].description}
-              </p>
-
-              <Link href="/reservation">
-                <Button label="Book" />
-              </Link>
-
-              <div className="flex items-start justify-items-start pt-9">
-          <hr className="w-[95.5%] absolute top-1/2 transform translate-y-1/3 z-0"></hr>
-        </div>
-
-              <div className="flex gap-10 pt-15">
-                <button
-                  onClick={prevSlide}
-                  className="p-2 bg-yellow-50 hover:bg-yellow-600 clip-triangle w-11.2 h-8 z-0"
-                >
-                  <ChevronLeft className="text-black font-extrabold" />
-                </button>
-
-                <button
-                  onClick={nextSlide}
-                  className="p-2 bg-yellow-50 hover:bg-yellow-500 clip-triangle w-11.2 h-8 z-0"
-                >
-                  <ChevronRight className="text-black font-extrabold" />
-                </button>
-              </div>
-            </div>
+                className="w-full h-auto object-cover rounded-lg z-0"
+              />
+            </Link>
           </div>
 
-          {/* Next Button */}
-        </div>
+          {/* Content */}
+          <div className="flex flex-col gap-3 text-white p-4 w-100 z-0">
+            <h2 className="text-3xl w-[500px] sm:text-4xl md:text-[50px] font-bold text-amber-600 break-words">
+              {slides[presentIndex].title}
+            </h2>
+            <p className="text-base sm:text-lg pb-4">
+              {slides[presentIndex].description}
+            </p>
 
-        {/* Indicators */}
-        <div className="flex justify-center gap-2 mt-15">
-          {slides.map((_, index) => (
-            <span
-              key={index}
-              className={`w-3 h-3 clip-triangle ${
-                index === presentIndex ? "bg-yellow-700" : "bg-white"
-              }`}
-            />
-          ))}
+            <Link href="/reservation" className="inline-block max-w-fit">
+              <Button label="Book" />
+            </Link>
+
+            <div className="relative w-full pt-9">
+              <hr className="w-full absolute top-1/2 transform -translate-y-1/2 border-gray-600" />
+            </div>
+
+            {/* Navigation Buttons */}
+            <div className="flex gap-4 sm:gap-10 pt-8">
+              <button
+                onClick={prevSlide}
+                className="p-3 bg-yellow-50 hover:bg-yellow-600 clip-triangle w-13 h-10 z-0"
+                aria-label="Previous slide"
+              >
+                <ChevronLeft className="text-black font-extrabold flex items-center justify-center" />
+              </button>
+
+              <button
+                onClick={nextSlide}
+                className="p-3 bg-yellow-50 hover:bg-yellow-500 clip-triangle w-13 h-10 z-0"
+                aria-label="Next slide"
+              >
+                <ChevronRight className="text-black font-extrabold" />
+              </button>
+            </div>
+          </div>
         </div>
-        <div></div>
       </div>
-    </>
+
+      {/* Indicators */}
+      <div className="flex justify-center gap-2 mt-6">
+        {slides.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setPresentIndex(index)}
+            className={`w-3 h-3 clip-triangle ${
+              index === presentIndex ? "bg-yellow-700" : "bg-white"
+            }`}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
+      </div>
+    </div>
   );
 }
 

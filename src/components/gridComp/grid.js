@@ -26,7 +26,7 @@ export function Grid() {
 
   return (
 
-    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0 p-32 min-h[500px]'>
+    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0 sm:p-32 min-h-[500px] p-8'>
 {images.map((jpeg, index) => (
         <div key={index} className="relative z-0 w-[318px] h-[400px] transition-transform duration-300 hover:scale-105 overflow-hidden">
           <Image
@@ -34,7 +34,7 @@ export function Grid() {
             alt={`Image ${index + 1}`}
             layout="fill"
             objectFit="cover"
-            className="rounded-lg shadow-md"
+            className="rounded-lg shadow-md z-0"
           />
         </div>
       ))}
