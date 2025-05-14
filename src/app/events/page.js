@@ -14,8 +14,9 @@ function Events() {
       textIII="UPCOMING/REGULAR Event Nights"
       />
 
+{/* w-full max-w-7xl mx-auto */}
       <section className="">
-        <div className="flex gap-1 pt-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-6 pt-14">
           <Banner
             url="https://res.cloudinary.com/diutqnpvv/image/upload/v1742908704/MM_act7h5.png"
             textI="Monday Magic"
@@ -36,9 +37,7 @@ function Events() {
             textII="Every Wednesday"
             click="Book"
           />
-        </div>
 
-        <div className="flex gap-3 pt-14">
           <Banner
             url="https://res.cloudinary.com/diutqnpvv/image/upload/v1742908703/TT2_sfpemg.png"
             textI="Throwback Thursday"
@@ -62,8 +61,8 @@ function Events() {
         </div>
         </section>
 
-        <div className="pt-4">
-        <p className="text-center pt-14 text-3xl">Get in touch with <a href="https://localhost:3000" target="_blank" rel="noopener noreferrer"><span className="text-yellow-600 text-sm">b▲llAZZ Your Deluxe Events Spot</span></a></p>
+        <div className="pt-4 mx-auto">
+        <p className="text-center pt-14 text-xl sm:text-3xl md:text-2xl">Get in touch with <a href="https://localhost:3000" target="_blank" rel="noopener noreferrer"><span className="text-yellow-600 text-xs sm:text-sm md:text-base">b▲llAZZ Your Deluxe Events Spot</span></a></p>
         </div>
 
     </div>

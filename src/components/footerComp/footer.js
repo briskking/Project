@@ -13,8 +13,8 @@ export function Footer() {
 
           <ul className="text-lg sm:text-lg">
             <li className="pb-3 font-bold">b▲llAZZ Events spot</li>
-            <li>+919112211493</li>
-            <li>+919112211492</li>
+            <li>+234112211493</li>
+            <li>+234112211492</li>
             <li>events@ballazz.com sales@ballazz.com</li>
           </ul>
 
