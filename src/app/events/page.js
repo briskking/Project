@@ -15,8 +15,8 @@ function Events() {
       />
 
 {/* w-full max-w-7xl mx-auto */}
-      <section className="">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-6 pt-14">
+      <section className="w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 px-1 sm:px-2 pt-14">
           <Banner
             url="https://res.cloudinary.com/diutqnpvv/image/upload/v1742908704/MM_act7h5.png"
             textI="Monday Magic"
@@ -33,15 +33,16 @@ function Events() {
 
           <Banner
             url="https://res.cloudinary.com/diutqnpvv/image/upload/v1742908711/ww_kxro79.png"
-            textI="Wednesday Wind &#8595;"
-            textII="Every Wednesday"
+            textI="Wednesday Wind Down"
+            textII="Every Wed."
             click="Book"
           />
+          {/* &#8595; */}
 
           <Banner
             url="https://res.cloudinary.com/diutqnpvv/image/upload/v1742908703/TT2_sfpemg.png"
             textI="Throwback Thursday"
-            textII="Every Thursday"
+            textII="Every Thurs."
             click="Book"
           />
 
@@ -54,8 +55,8 @@ function Events() {
 
           <Banner
             url="https://res.cloudinary.com/diutqnpvv/image/upload/v1742908705/sat_wywuqd.png"
-            textI="B▲llAZZ Saturday"
-            textII="Every Saturday"
+            textI="B▲LLAZZ Saturday"
+            textII="Every Sat."
             click="Book"
           />
         </div>
