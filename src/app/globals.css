@@ -89,7 +89,7 @@ p {
 }
 
 .clip-trianglee {
-  clip-path: polygon(50% 100%, -20% 0%, 120% 0%);
+  clip-path: polygon(50% 100%, -40% 0%, 140% 0%);
   display: inline-block;
   text-align: center;
 }
@@ -113,6 +113,17 @@ p {
   /* padding: auto; */
   /* margin: 30rem; */
 }
+
+
+/* @media screen and (max-width: 662px) {
+
+.clip-trianglee {
+  clip-path: polygon(50% 100%, -40% 0%, 140% 0%);
+  display: inline-block;
+  text-align: center;
+}
+
+} */
 
 /* @keyframes slide {
   0% {

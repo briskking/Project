@@ -5,11 +5,11 @@ export const Horiz = ({caption, first, textI, textII, textIII, textIV }) => {
     <div>
       {first ? (
         <div>
-          <h1 className="text-5xl text-yellow-50 items-center justify-center flex flex-col gap-2">
+          <h1 className="text-[32px] sm:text-5xl text-yellow-50 items-center justify-center flex flex-col md:flex-row gap-2">
             {caption}
           </h1>
 
-          <hr className="h-1 border-none bg-yellow-700 w-30 items-center mx-auto mt-3" />
+          <hr className="h-1 border-none bg-yellow-700 w-20 sm:w-30 items-center mx-auto mt-3" />
         </div>
       ) : (
         <div className="flex flex-col mx-31 py-5 items-center justify-center space-x-4 bg-[#1f0a24] text-center">

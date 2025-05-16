@@ -4,9 +4,6 @@ import Image from "next/image";
 const Imagebox = ({ pix, text }) => {
   return (
     <div className="">
-      {/* <div className='relative clip-triangle bg-purple-800 w-auto border-l-[50px] border-r-[50px] border-b-[100px]'>
-
-</div> */}
 
       <div className="clip-triangular z-0 relative w-full max-w-xl flex-col text-center pt-60 text-xl font-bold text-yellow-700">
         {text}

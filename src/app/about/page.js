@@ -13,16 +13,15 @@ export function About() {
         first
         />
         
-
-        <section className="flex flex-col gap-90 h-auto min-h-screen mb-7">
-          <div className="pt-7">
+        <section className="mb-7 flex-col  h-auto min-h-screen">
+          <div className="pt-7 sm:mb-100 mb-15">
             <Imageslide
               heading="Enjoy Deluxe holidays"
-              text="Let b▲llAZZ Events spot take you trabaye with a truly worthy experience of money well spent. Our creative team provides party enthusiast's with a deluxe experience of a state of the art dancefloor, unique lighting, top notch sound/tunes from some of the best in the industry plus a restaurant serving odogwu delicacies."
+              text="Let b▲llAZZ Events spot take you trabaye with a truly worthy experience of money well spent. Our creative team provides party enthusiast's with a deluxe experience of a state of the art dancefloor, unique lighting, dope tunes from some of the best in the industry plus a restaurant serving odogwu delicacies."
             />
           </div>
 
-          <div>
+          <div className="">
             <Imageslide
               heading="Chilly Sights and Treats"
               text="Housing the best international cuisine and most wanted +234 dishes, b▲llAZZ’s riverside restaurant has the Ginger to tantalize your taste buds and travel mood. Spend the evening at our Riverside view while having the best of cocktails and +234 delicacies at b▲llAZZ's deluxe Restaurant"
@@ -31,12 +30,12 @@ export function About() {
           </div>
         </section>
 
-        <section className="pt-50">
+        <section className="pt-10 sm:pt-40">
           <Horiz caption="What We Offer" 
           first
           />
 
-          <div className="flex gap-7 pt-14">
+          <div className="sm:flex md:flex-row flex-col sm:gap-7 space-y-8 pt-14">
             <Overlay
               text="Comfortable Space for your Owambe Parties"
               mirror="/gridimages/31.jpg"

@@ -11,14 +11,14 @@ export function Footer() {
 
         {/* w-full sm:px-30 px-30 p-0 sm:p-0 */}
 
-          <ul className="text-lg sm:text-lg">
+          <ul className="text-[14px] sm:text-[14px]">
             <li className="pb-3 font-bold">b▲llAZZ Events spot</li>
             <li>+234112211493</li>
             <li>+234112211492</li>
             <li>events@ballazz.com sales@ballazz.com</li>
           </ul>
 
-          <ul className="pt-5 text-lg sm:text-lg">
+          <ul className="pt-5 text-[14px] sm:text-[14px] w-full">
             <li className="pb-3 font-bold">Opening Time</li>
             <li>Opening Hours - 247</li>
             <li>Party Hours - Your event 0'clock</li>
@@ -26,7 +26,7 @@ export function Footer() {
           </ul>
 
           <ul className="pt-5 text-lg sm:text-lg">
-            <li className="pb-3 font-bold">Quick Links</li>
+            <li className="pb-2 font-bold">Quick Links</li>
             <Link href="/about">
               <li>About</li>
             </Link>
@@ -47,14 +47,14 @@ export function Footer() {
             </Link>
           </ul>
 
-          <div className="text-center flex-col text-yellow-100 text-5xl">
+          <div className="text-center flex-col text-yellow-100 text-5xl pt-4">
             <h1 className="font-bold">b▲llazz</h1>
             <h4 className="font-bold text-[10px]">Your Deluxe Events Spot</h4>
           </div>
         </div>
 
-        <div className="px-30 flex justify-between gap-30 items-center sm:items-center text-center sm:text-center sm:justify-center">
-          <p>
+        <div className="px-6 sm:px-30 md:px-10 lg:pl-30 text-center sm:text-left">
+          <p className="">
             Copyright © {new Date().getFullYear()} 234 CLUBS All Rights
             Reserved.
             <span className="">
