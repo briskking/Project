@@ -33,7 +33,7 @@ export function Shapesection() {
             </h3>
             <hr className="h-1 border-none bg-yellow-700 w-15" />
             
-            <div className="sm:w-[100%] w-[450px] text-justify md:text-center text-[15.5px] sm:text-lg">
+            <div className="sm:w-[100%] w-[320px] text-justify md:text-center text-[15.5px] sm:text-lg">
             <p className="pb-6 pt-9 leading-7 md:leading-8">
               Witness a change in the nightlife and entertainment scene that has
               revamped ballAZZ’s events & clubbing landscape. ballAZZ Events
@@ -45,7 +45,7 @@ export function Shapesection() {
             </p>
             </div>
 
-            <div className="sm:w-[100%] w-[450px] text-justify md:text-center text-[15.5px] sm:text-lg">
+            <div className="sm:w-[100%] w-[320px] text-justify md:text-center text-[15.5px] sm:text-lg">
             <p className="pb-6 leading-7 md:leading-8">
               ballAZZ Events Spot has earned its reputation as the most famous
               Events Spot in +234. We have redefined the party experience,
@@ -55,7 +55,7 @@ export function Shapesection() {
             </p>
             </div>
 
-            <div className="sm:w-[100%] w-[450px] text-justify md:text-center text-[15.5px] sm:text-lg">
+            <div className="sm:w-[100%] w-[320px] text-justify md:text-center text-[15.5px] sm:text-lg">
             <p className="pb-6 leading-7 md:leading-8">
               At ballAZZ Events Spot, you can count on us to help you live out
               moments that last forever. Our modern state-of-the-art sound
@@ -69,7 +69,7 @@ export function Shapesection() {
             </p>
             </div>
 
-            <div className="sm:w-[100%] w-[450px] text-justify md:text-center text-[15.5px] md:text-lg text-amber-100">
+            <div className="sm:w-[100%] w-[320px] text-justify md:text-center text-[15.5px] md:text-lg text-amber-100">
             <p className="pb-6 leading-7 md:leading-8">
               It isnt too late to become a part of the legend that is ballAZZ
               Events Spot. Don’t miss out on what is notably the best events
@@ -79,7 +79,7 @@ export function Shapesection() {
             </p>
             </div>
 
-            <div className="sm:w-[100%] w-[450px] justify-evenly">
+            <div className="sm:w-[100%] w-[320px] justify-evenly">
             <p className="md:leading-7 leading-7">To learn more, contact ballAZZ the Deluxe Events Spot</p>
             </div>
           </div>

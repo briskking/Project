@@ -69,7 +69,7 @@ export function Slider() {
       <div className="flex items-center justify-center p-1">
         <div className="flex flex-col lg:flex-row-reverse gap-4 md:gap-8 lg:gap-16 items-center justify-center">
           {/* Image */}
-          <div className="rounded-lg shadow-lg sm:w-[270px] xl:w-[300px] overflow-hidden">
+          <div className="rounded-lg shadow-lg sm:w-[200px] xl:w-[300px] overflow-hidden">
             <Link href="/events" className="cursor-pointer block">
               <img
                 width={300}
@@ -81,7 +81,7 @@ export function Slider() {
           </div>
 
           {/* Content */}
-          <div className="flex flex-col gap-3 text-white p-4 w-100 z-0">
+          <div className="flex flex-col gap-3 text-white pl-7 md:p-4 w-100 z-0">
             <h2 className="text-3xl w-[500px] sm:text-4xl md:text-[50px] font-bold text-amber-600 break-words">
               {slides[presentIndex].title}
             </h2>

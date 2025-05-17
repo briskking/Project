@@ -18,7 +18,7 @@ const Imageslide = ({ heading, text, reverse }) => {
           reverse ? "flex-row-reverse" : "flex-row"
         }`}
       >
-        <div className="clip-triangule bg-purple-950 w-95 h-60 sm:w-145 sm:h-80 text-clip text-left sm:absolute relative top-[-20px] left-[5px] z-10 sm:top-8 sm:left-[-5px] overflow-hidden">
+        <div className="clip-triangule bg-purple-950 w-95 h-70 sm:w-145 sm:h-80 text-clip text-left sm:absolute relative top-[-20px] left-[10px] z-10 sm:top-8 sm:left-[-5px] overflow-hidden">
           <div className="h-full w-full animate-slide flex">
             {[...images, ...images].map((jpg, index) => (
               <div key={index} className="w-full flex-shrink-0">
@@ -36,11 +36,11 @@ const Imageslide = ({ heading, text, reverse }) => {
           </div>
         </div>
 
-        <div className="clip-trianglee bg-purple-950 w-95 h-60 sm:w-145 sm:h-80 text-clip py-1 relative sm:absolute z-0 right-[-5px] sm:right-[-5px]">
+        <div className="clip-trianglee bg-purple-950 w-95 h-70 sm:w-145 sm:h-80 text-clip py-1 relative sm:absolute z-0 right-[-10px] sm:right-[-5px]">
           <h1 className="text-4xl font-bold text-yellow-700 pb-1">{heading}</h1>
 
           <div className="mx-2 md:mx-10">
-            <p className="md:text-[15.5px] text-[10px] sm:w-full w-full sm:text-center text-center md:leading-7 leading-5">{text}</p>
+            <p className="md:text-[15.5px] text-[12px] sm:w-full w-full sm:text-center text-center md:leading-7 leading-5">{text}</p>
           </div>
         </div>
       </div>

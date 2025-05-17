@@ -12,7 +12,7 @@ export const Banner = ({url, textI, textII, click}) => {
           alt="showz"
           width={200}
           height={50}
-          className="object-cover w-auto h-[500px]"
+          className="object-cover w-auto md:h-[500px] h-[500px]"
         />
 
         <div className="flex flex-col items-start sm:items-start justify-between w-[100%] px-3 h-[80px] bg-[#402c45] border-yellow-800 rounded-lg shadow-lg z-0">
