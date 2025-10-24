@@ -4,6 +4,7 @@ import Grid from "../gridComp/grid.js/";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { Slider } from "../slideComp/slides.js/";
+import Triangle from "../triangle.js/";
 
 export function Shapesection() {
   return (
@@ -18,9 +19,22 @@ export function Shapesection() {
             shellshocked everyday only at b▲llAZZ the Deluxe Events Spot.
           </h4>
 
-          <div className="mt-10 w-full">
+          {/* <div className="relative"> */}
+
+          <div className="relative mt-10 w-full z-10">
+           
+           
+            <Triangle />
+             
+
             <Slider />
+
+            {/* <div > */}
+
+            {/* </div> */}
           </div>
+
+          {/* </div> */}
 
           <div className="text-center px-31 py-6 leading-4 flex flex-col items-center justify-center sm:text-[17.2px] text-[22px]">
             <div className="sm:w-[650px] w-[200px]">
@@ -32,55 +46,58 @@ export function Shapesection() {
               YOUR NUMBER ONE GOTO SPOT IN +234.
             </h3>
             <hr className="h-1 border-none bg-yellow-700 w-15" />
-            
+
             <div className="sm:w-[100%] w-[320px] text-justify md:text-center text-[15.5px] sm:text-lg">
-            <p className="pb-6 pt-9 leading-7 md:leading-8">
-              Witness a change in the nightlife and entertainment scene that has
-              revamped ballAZZ’s events & clubbing landscape. ballAZZ Events
-              Spot stands as the climax of deluxe revelry, where unparalleled
-              party experience is on offer in the heart of +234. As the best
-              events spot in +234, we pride ourselves on curating unforgettable
-              nights filled with pulsating beats, captivating lights & an
-              electrifying ambiance that will leave you wanting more.
-            </p>
+              <p className="pb-6 pt-9 leading-7 md:leading-8">
+                Witness a change in the nightlife and entertainment scene that
+                has revamped ballAZZ’s events & clubbing landscape. ballAZZ
+                Events Spot stands as the climax of deluxe revelry, where
+                unparalleled party experience is on offer in the heart of +234.
+                As the best events spot in +234, we pride ourselves on curating
+                unforgettable nights filled with pulsating beats, captivating
+                lights & an electrifying ambiance that will leave you wanting
+                more.
+              </p>
             </div>
 
             <div className="sm:w-[100%] w-[320px] text-justify md:text-center text-[15.5px] sm:text-lg">
-            <p className="pb-6 leading-7 md:leading-8">
-              ballAZZ Events Spot has earned its reputation as the most famous
-              Events Spot in +234. We have redefined the party experience,
-              setting new standards of opulence and excitement. Stepping through
-              our doors, gets you encapsulated in a uniquely deluxe atmosphere
-              spiced up with unbridled energy.
-            </p>
+              <p className="pb-6 leading-7 md:leading-8">
+                ballAZZ Events Spot has earned its reputation as the most famous
+                Events Spot in +234. We have redefined the party experience,
+                setting new standards of opulence and excitement. Stepping
+                through our doors, gets you encapsulated in a uniquely deluxe
+                atmosphere spiced up with unbridled energy.
+              </p>
             </div>
 
             <div className="sm:w-[100%] w-[320px] text-justify md:text-center text-[15.5px] sm:text-lg">
-            <p className="pb-6 leading-7 md:leading-8">
-              At ballAZZ Events Spot, you can count on us to help you live out
-              moments that last forever. Our modern state-of-the-art sound
-              systems and highly talented DJs ensure that every beat gives you
-              the turn it up feeling. The carefully crafted lighting setup
-              elevates the entire experience, casting a magical glow that sets
-              the mood for unforgettable nights. Whether you’re dancing the
-              night away with friends or sipping on handcrafted cocktails at our
-              exquisite bar, every moment at ballAZZ is a testament to our
-              commitment to excellence.
-            </p>
+              <p className="pb-6 leading-7 md:leading-8">
+                At ballAZZ Events Spot, you can count on us to help you live out
+                moments that last forever. Our modern state-of-the-art sound
+                systems and highly talented DJs ensure that every beat gives you
+                the turn it up feeling. The carefully crafted lighting setup
+                elevates the entire experience, casting a magical glow that sets
+                the mood for unforgettable nights. Whether you’re dancing the
+                night away with friends or sipping on handcrafted cocktails at
+                our exquisite bar, every moment at ballAZZ is a testament to our
+                commitment to excellence.
+              </p>
             </div>
 
             <div className="sm:w-[100%] w-[320px] text-justify md:text-center text-[15.5px] md:text-lg text-amber-100">
-            <p className="pb-6 leading-7 md:leading-8">
-              It isnt too late to become a part of the legend that is ballAZZ
-              Events Spot. Don’t miss out on what is notably the best events
-              spot in +234. Join us for extraordinary days of music, dance, and
-              memories that will linger long forever. Welcome to Change; welcome
-              to ballAZZ!
-            </p>
+              <p className="pb-6 leading-7 md:leading-8">
+                It isnt too late to become a part of the legend that is ballAZZ
+                Events Spot. Don’t miss out on what is notably the best events
+                spot in +234. Join us for extraordinary days of music, dance,
+                and memories that will linger long forever. Welcome to Change;
+                welcome to ballAZZ!
+              </p>
             </div>
 
             <div className="sm:w-[100%] w-[320px] justify-evenly">
-            <p className="md:leading-7 leading-7">To learn more, contact ballAZZ the Deluxe Events Spot</p>
+              <p className="md:leading-7 leading-7">
+                To learn more, contact ballAZZ the Deluxe Events Spot
+              </p>
             </div>
           </div>
 

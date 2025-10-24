@@ -5,7 +5,7 @@ export function Blog() {
   return (
     <div className="flex flex-col items-center justify-center py-35 mx-auto h-full bg-[#1f0a24] w-full">
 
-      <div className="flex gap-7">
+      <div className="flex-col flex md:flex-row gap-7">
         
         <BlogBox
           img="/gridimages/51.jpg"
@@ -20,7 +20,7 @@ export function Blog() {
         />
       </div>
 
-      <div className="flex gap-7 pt-12">
+      <div className="flex-col flex md:flex-row gap-7 pt-12">
       <BlogBox
         img="/gridimages/51.jpg"
         caption="🥂 From Day to Night: How BallAZZ Events Spot Transforms for Any Vibe"
@@ -33,7 +33,7 @@ export function Blog() {
       />
       </div>
 
-      <div className="flex gap-7 pt-12 pb-14">
+      <div className="flex-col flex md:flex-row gap-7 pt-12 pb-14">
       <BlogBox
         img="/gridimages/51.jpg"
         caption="🎶 Sound. Lights. Action: How BallAZZ Sets the Stage for Epic Events"

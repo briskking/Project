@@ -17,7 +17,7 @@ export const Overlay = ({mirror, mirrorI, mirrorII, text, wording, words, wordsI
        src={mirror}
        width={300}
        height={200}
-       className='object-cover w-full h-full absolute top-0 left-0 scale-x-[-1] opacity-35'
+       className='object-cover w-full h-full absolute top-0 left-0 scale-x-[-1] opacity-35 transition-transform duration-300 hover:scale-105 overflow-hidden'
        /> 
 
 <div className='absolute text-purple-50 text-lg font-bold text-center px-6'>
@@ -32,7 +32,7 @@ export const Overlay = ({mirror, mirrorI, mirrorII, text, wording, words, wordsI
        src={mirrorI}
        width={300}
        height={200}
-       className='object-cover w-full h-full absolute top-0 left-0 scale-x-[-1] opacity-45'
+       className='object-cover w-full h-full absolute top-0 left-0 scale-x-[-1] opacity-45 transition-transform duration-300 hover:scale-102 overflow-hidden'
        /> 
 
 <div className='absolute text-purple-50 text-lg font-bold text-center px-6'>
@@ -48,7 +48,7 @@ export const Overlay = ({mirror, mirrorI, mirrorII, text, wording, words, wordsI
   src={mirrorII}
   width={300}
   height={200}
-  className='object-cover w-full h-full absolute top-0 left-0 scale-x-[-1] opacity-15'
+  className='object-cover w-full h-full absolute top-0 left-0 scale-x-[-1] opacity-15 transition-transform duration-300 hover:scale-100 overflow-hidden'
   /> 
 
 <div className="text-center flex-col text-yellow-100 text-4xl">

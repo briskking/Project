@@ -10,7 +10,7 @@ function BlogBox({img, caption, text, slug }) {
  
   return (
     <>
-    <div className='w-134 h-110 bg-transparent border-0 rounded-2xl border-transparent flex-col items-end'>
+    <div className='md:w-134 w-100 h-110 bg-transparent border-0 rounded-2xl border-transparent flex-col items-end'>
 
        <div> 
         <Image
@@ -23,7 +23,7 @@ function BlogBox({img, caption, text, slug }) {
         />
         </div>
 
-        <div className='w-134 h-30 bg-black/50 border-2 rounded-b-2xl border-transparent flex-col items-center justify-center mx-auto p-4'>
+        <div className='md:w-134 w-105 h-30 bg-black/50 border-2 rounded-b-2xl border-transparent flex-col items-center justify-center mx-auto p-4'>
         {/* <Image src={img} /> */}
         <Link href={`/blogs/${slug}`}><h4 className='hover:text-yellow-700 text-gray-200'>{caption}</h4></Link>
         <p className='pt-2 text-gray-400'>{text}</p>

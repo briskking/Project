@@ -12,8 +12,8 @@ export const Horiz = ({caption, first, textI, textII, textIII, textIV }) => {
           <hr className="h-1 border-none bg-yellow-700 w-20 sm:w-30 items-center mx-auto mt-3" />
         </div>
       ) : (
-        <div className="flex flex-col mx-31 py-5 items-center justify-center space-x-4 bg-[#1f0a24] text-center">
-          <h1 className="items-center text-5xl text-gray-100 font-extrabold font-stretch-extra-expanded">
+        <div className="flex flex-col py-5 items-center justify-center space-x-4 bg-[#1f0a24] text-center">
+          <h1 className="items-center text-5xl md:text-7xl text-gray-100 font-extrabold font-stretch-extra-expanded">
             {textI}
           </h1>
 
