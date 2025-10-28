@@ -65,18 +65,18 @@ export function FormII() {
   };
 
   return (
-    <div className="flex items-center justify-center gap-50">
-      <div className="flex flex-col items-start justify-start gap-7 px-4">
+    <div className="flex flex-col md:flex-row items-center md:items-center justify-center md:gap-50 gap-15">
+      <div className="flex flex-col items-center md:items-start justify-start gap-7 px-4 md:pt-0 pt-10">
         <h2 className="text-7xl w-[300px] font-stretch-ultra-expanded">
           Secure a Spot
         </h2>
-        <p className="w-[500px] text-left text-yellow-600">
+        <p className="w-[350px] text-center md:text-left md:w-[500px] text-yellow-600">
           Choose from several table service arrangements including the entrance
           fee, liquor, separate cloakroom, separate lavatory and speed entrance.
         </p>
       </div>
 
-      <div className="flex flex-row items-center justify-center w-[400px] h-[100vh] bg-[#1a0f20]">
+      <div className="flex flex-row items-center justify-center w-[400px] h-[100vh] bg-[#1a0f20] md:pt-0 pt-1">
         <form
           onSubmit={handleSubmit}
           className="flex flex-col items-start justify-start gap-7 px-4 mx-auto"
@@ -84,7 +84,7 @@ export function FormII() {
       
           <div className="flex flex-col w-[300px]">
             <input
-              className="w-full h-[50px] px-4 bg-[#402c45] rounded-lg text-white"
+              className="w-full md:h-[50px] h-[100px] px-4 bg-[#402c45] rounded-lg text-white md:text-lg text-2xl"
               type="text"
               name="email"
               placeholder="Email"
@@ -96,7 +96,7 @@ export function FormII() {
 
           <div className="flex flex-col w-[300px]">
             <input
-              className="w-full h-[50px] px-4 bg-[#402c45] rounded-lg text-white"
+              className="w-full md:h-[50px] h-[100px] px-4 bg-[#402c45] rounded-lg text-white md:text-lg text-2xl"
               type="password"
               name="password"
               placeholder="Password"
@@ -106,15 +106,15 @@ export function FormII() {
             {error.password && <span className="text-red-500 text-sm">{error.password}</span>}
           </div>
 
-          <label className="text-[12px] text-[#d1c4e9]">Confirm Zone</label>
+          <label className="md:text-lg text-2xl text-[#d1c4e9]">Confirm Zone</label>
           <div className="flex flex-col w-[300px]">
             <select
-              className="w-full h-[50px] px-4 text-[#d1c4e9] bg-[#402c45] rounded-lg"
+              className="w-full md:h-[50px] h-[100px]  px-4 text-[#d1c4e9] md:text-lg text-2xl bg-[#402c45] rounded-lg"
               name="zone"
               value={formDetails.zone}
               onChange={handleChange}
             >
-              <option value="">Choose Zone</option>
+              <option value="" className="md:text-lg text-2xl">Choose Zone</option>
               <option value="zone I">Zone I</option>
               <option value="zone II">Zone II</option>
               <option value="zone III">Zone III</option>
@@ -124,7 +124,7 @@ export function FormII() {
 
           <div className="flex flex-col w-[300px]">
             <select
-              className="w-full h-[50px] px-4 text-[#d1c4e9] bg-[#402c45] rounded-lg"
+              className="w-full md:h-[50px] h-[100px] px-4 text-[#d1c4e9] md:text-lg text-2xl bg-[#402c45] rounded-lg"
               name="guestsRange"
               value={formDetails.guestsRange}
               onChange={handleChange}
@@ -139,7 +139,7 @@ export function FormII() {
 
           <button
             type="submit"
-            className="w-[300px] h-[50px] bg-[#682677] text-white rounded-lg"
+            className="w-[300px] md:h-[50px] h-[100px] bg-[#682677] text-white md:text-lg text-2xl rounded-lg"
           >
             Reserve Now
           </button>

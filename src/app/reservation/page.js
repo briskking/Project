@@ -40,17 +40,17 @@ export function Reservation() {
 
         </div>
 
-        <div className="flex flex-col md:flex-row items-center justify-center pt-5 gap-9">
-          <div className="flex-col items-start justify-start">
-            <div className="flex flex-col items-center gap-2">
-            <hr className="border-2 border-yellow-700 w-15"/>
-            <p className="font-bold text-4xl pb-4 w-[400px] text-left">
+        <div className="flex flex-col md:flex-row items-center justify-center md:pt-5 pt-15 gap-9">
+          <div className="flex-col md:items-start items-center justify-start">
+            <div className="flex flex-col md:flex-row items-center gap-2">
+            <hr className="border-2 border-yellow-700 md:w-15 w-80"/>
+            <p className="font-bold text-4xl pb-4 w-[400px] md:text-left text-center">
               <span className="text-xl font-medium">For confirm booking</span> Whatsapp Us On
             </p>
             </div>
             
 
-            <ul className="pl-20 text-left">
+            <ul className="md:pl-20 pl-0 md:text-left text-center md:text-lg text-xl font-light space-y-2">
               <li>+234 9012211491</li>
               <li>+234 9112211492</li>
               <li>+234 9112211493</li>
